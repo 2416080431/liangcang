@@ -2,9 +2,542 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>主页</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+		
 	</head>
 	<body>
+		<!-------------------------头部-------------------------------->
+		<div class="head">
+			<div class="head-content">
+				<a class="logo" href="index.html"></a>
+				<ul class="head-right">
+					<li><span><a href="#">登录</a><a href="#">注册</a></span></li>
+					<li class="line"></li>
+					<li class="cart">
+						<a class="cart-a" href="#">购物车</a>
+						<div class="cart-detail">
+							<p>您的购物车暂时没有商品</p>
+							<a href="goods.html">快去抢购良仓商品吧！</a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li class="message">
+						<a  class="message-a" href="#">消息</a>
+						<div class="message-detail">
+							<a href="#">动态<small>0</small></a>
+							<a href="#">评论<small>0</small></a>
+							<a href="#">私信<small>0</small></a>
+							<a href="#">粉丝<small>0</small></a>
+							<a href="#">喜欢<small>0</small></a>
+							<a href="#">通知<small>0</small></a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li ><a class="goodsAdd" href="#">添加良品</a></li>
+				</ul>
+			</div>
+		</div>
 		
+		<!-------------------------导航栏-------------------------------->
+		<div class="nav">
+			<div class="nav-content">
+				<ul class="nav-left">
+					<li><a href="#">首页</a></li>
+					<li class="store">
+						<a href="#">商店</a>
+						<div class="store-content">
+							<ul>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+							</ul>
+							<div>
+								<img src="img/head/goods0.jpg" />
+								<p>新视线：  2015期刊</p>
+							</div>
+						</div>
+					</li>
+					<li class="magazine">
+						<a href="#">杂志</a>
+						<div class="magazine-content">
+							<ul>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="share">
+						<a href="#">分享</a>
+						<div class="share-content">
+							<ul>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">达人</a></li>
+				</ul>
+				<div class="nav-right">
+					<div class="search-input">
+						<input type="text" placeholder="search..." />
+					</div>
+					<i></i>
+				</div>
+			</div>
+		</div>
+		
+		<div id="main">
+	<!--首页轮播图开始-->
+		<div class="carousel">
+	    <div class="imagesList" id="imagesList">
+	      <ul>
+	        <li class="current"> <a href=""> <img src="img/index/current1.jpg" alt=""> </a> </li>
+	        <li> <a href=""> <img src="img/index/current2.jpg" alt=""> </a> </li>
+	        <li> <a href=""> <img src="img/index/current3.jpg" alt=""> </a> </li>
+	        <li> <a href=""> <img src="img/index/current4.jpg" alt=""> </a> </li>
+	        <li> <a href=""> <img src="img/index/current5.jpg" alt=""> </a> </li>
+	      </ul>
+	    </div>
+	    <div class="btns">
+	      <span class="leftBtn" id="carousel_leftBtn">左</span>
+	      <span class="rightBtn" id="carousel_rightBtn">右</span>
+	    </div>
+	    <div class="circles" id="circles">
+	      <ol>
+	        <li class="current"></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	      </ol>
+	    </div>
+	    </div>
+	<!--首页轮播图结束-->
+		<div class="hAdv02">
+			<div class="item1" style="top: 0px;left: 0px;">
+				<a href="http://www.iliangcang.com/i/topicapp/201709045520"><img src="img/index/良仓_04.png"/></a>
+			</div>
+			<div class="item2">
+				<a href="http://www.iliangcang.com/i/topicapp/201709075914"><img src="img/index/良仓_06.png"/></a>
+			</div>
+			<div class="item1" style="top: 0px; right: 0px;">
+				<a href="http://www.iliangcang.com/i/topicapp/201709071810"><img src="img/index/良仓_08.png"/></a>
+			</div>
+			<div class="item1" style="bottom: 0px; left: 0px;">
+				<a href="http://www.iliangcang.com/i/topicapp/201709072737"><img src="img/index/良仓_12.png"/></a>
+			</div>
+			<div class="item1" style="bottom: 0px; right: 0px;">
+				<a href="http://www.iliangcang.com/i/topicapp/201709040517"><img src="img/index/良仓_13.png"/></a>
+			</div>
+		</div>
+		<!--人气产品-->
+		<div class="hGCtle">人气良品</div>
+		<div class="shopListCon styl_3" style="margin-top: 20px;">
+			<div class="item first">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_17.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_18.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_19.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+		    
+		    <div class="item first">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_23.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_24.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_25.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item first">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_29.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_30.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_31.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			
+			<div class="item first">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_35.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_36.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_37.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			
+			<div class="item first">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_41.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_42.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_43.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			
+			<div class="item first">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_47.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_48.png">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imgCon">
+					<div class="optCon"></div>
+					<a href="/i/goods/?id=259194"><img src="img/index/良仓_49.png" title="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪" alt="《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪"/></a>
+					<a href="/i/goods/?id=259194" class="goodsInfo" target="_blank">
+						<p class="money">¥41.00</p>
+						<p class="tle">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪</p>
+						<p class="desc">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第4...</p>
+					</a>
+				</div>
+				<div class="bar">
+					<a class="who" href="/i/brand/intro/?id=932" target="_blank"><img src="img/index/智.jpg"/>'知日'</a>
+					<a class="goodsFavCount" href="javascript" onclick="goodsAddFavour">237</a>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+		
+		
+		<!-------------------------OurShop-------------------------------->
+		<div class="ourShop">
+			<a href="#"><i></i></a>
+			<div class="ourShop-service">
+				<ul>
+					<li>
+						<em class="ourShop-service-em1"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em2"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em3"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em4"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-------------------------底部-------------------------------->
+		<div class="foot">
+			<div class="foot-content">
+				<div class="foot-left">
+					<a class="foot-download" href="#">
+						<p>iPhone</p>
+						<p>Android</p>
+					</a>
+					<ul class="foot-ul">
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+					</ul>
+					<p>© 2013-2015 北京良仓文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
+					<p>  公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
+					<p>  公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+					<p>  社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557 </p>
+					<p>  图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+				</div>
+				<ul class="foot-right">
+					<li><a class="foot-right1" href="#"></a></li>
+					<li><a class="foot-right2" href="#"></a></li>
+					<li><a class="foot-right3" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-------------------------返回顶部按钮-------------------------------->
+		<div class="backToTop"></div>
 	</body>
 </html>
