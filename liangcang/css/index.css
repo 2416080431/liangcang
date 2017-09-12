@@ -18,18 +18,22 @@ a{
 	padding-top: 110px;
 	clear: both;
 }
+.imagesList{
+	overflow: hidden;
+}
 .carousel {
     width: 1000px;
     height: 475px;
     margin: 50px auto;
     position: relative;
-    overflow: hidden;
     }
 .carousel ul {
     list-style: none;
+    width: 7000px;
+    position: relative;
     }
 .carousel ul li {
-    display: none;
+	float: left;
     }
 .carousel ul li.current {
     display: block;
@@ -38,15 +42,25 @@ a{
     position: absolute;
     width: 55px;
     height: 55px;
-    top: 130px;
+    top: 200px;
+    border-radius: 50%;
+    
     cursor: pointer;
     }
 .carousel .leftBtn {
     left: 10px;
+    background: rgba(0,0,0,.2) url(../img/index/normal_right.png);
     }
 .carousel .rightBtn {
+	background: rgba(0,0,0,.2) url(../img/index/normal_left.png);
     right: 10px;
     }
+.carousel .leftBtn:hover{
+	background: rgba(0,0,0,.6) url(../img/index/normal_right.png);
+}
+.carousel .rightBtn:hover{
+	background: rgba(0,0,0,.6) url(../img/index/normal_left.png);
+}    
 .carousel .circles {
     position: absolute;
     bottom: 0px;
@@ -57,18 +71,20 @@ a{
     }
 .carousel .circles ol {
     list-style: none;
+    position: relative;
+    top: 25px;
     }
 .carousel .circles ol li {
     float: left;
     width: 17px;
-    height: 17px;
+    height: 5px;
     margin-right: 13px;
-    background-color: gold;
-    border-radius: 50%;
+    background-color: #ccc;
+    
     cursor: pointer;
     }
 .carousel .circles ol li.current {
-    background-color: purple;
+    background-color: black;
     }
     
     
@@ -110,8 +126,6 @@ a{
 	width: 1000px;
 }
 #main .shopListCon{
-	height: 490px;
-	width: 1000px;
 	float: left;
 	margin: 10px 0px;
 	position: relative;
@@ -128,20 +142,15 @@ a{
 }
 #main .shopListCon .item{
 	display: block;
-	
 	float: left;
 	z-index: 10;
 }
-
-
-
-
 #main .styl_3 .item .imgCon{
 	height: 316px;
 }
+
 #main .shopListCon .item .imgCon{
 	width: 100%;
-	height: 100%;
 	position: relative;
 }
 #main .shopListCon .item .imgCon .optCon {
@@ -151,32 +160,54 @@ a{
     top: 6px;
     right: 3px;
 }
+#main .shopListCon .item .imgCon img {
+    width: 100%;
+    height: 100%;
+}
 #main .styl_3 .item .imgCon .goodsInfo{
 	width: 286px;
 	height: 286px;
 }
 #main .shopListCon .item .imgCon .goodsInfo{
-	width: 205px;
-	height: 205px;
 	padding: 15px;
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: url();
+	background: url(../img/index/良仓_03.png);
 	z-index: 100;
-	display: block;
 	zoom: 1;
 	display: none;	
 }
-#main .shopListCon .item .imgCon img {
-    width: 100%;
-    height: 100%;
+
+#main .shopListCon .item .imgCon:hover .goodsInfo{
+	display: block;
+	background: rgba(0,0,0,0.8);
 }
 #main .shopListCon .item .imgCon .goodsInfo .money {
     color: #0c6eba;
     font-size: 20px;
     font-style: italic;
-    margin-top: 14px;
+}
+#main .styl_3 .item .imgCon .goodsInfo .money {
+    text-align: left;
+    width: 97%;
+    margin-top: 4px;
+}
+#main .shopListCon .item .imgCon .goodsInfo p {
+    margin: 0px auto;
+    height: 25px;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+#main .styl_3 .item .imgCon .goodsInfo .tle {
+    margin-top: 80px;
+}
+#main .shopListCon .item .imgCon .goodsInfo .tle {
+    font-size: 14px;
 }
 #main .shopListCon .item .imgCon .goodsInfo p {
     margin: 0px auto;
@@ -190,14 +221,6 @@ a{
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
-    margin-top: 12px;
-}
-#main .styl_3 .item .imgCon .goodsInfo .tle {
-    margin-top: 80px;
-}
-#main .shopListCon .item .imgCon .goodsInfo .tle {
-    font-size: 14px;
-    margin-top: 14px;
 }
 #main .shopListCon .item .imgCon .goodsInfo .desc {
     font-size: 12px;
@@ -206,12 +229,15 @@ a{
     white-space: normal;
     height: auto;
 }
-p {
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+#main .shopListCon .item .imgCon .goodsInfo p {
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    width: 85%;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #main .shopListCon .item .bar {
     width: 100%;
@@ -245,6 +271,5 @@ p {
 #main .shopListCon .item .bar .goodsFavCount {
     float: right;
     padding-right: 30px;
-    background: url() no-repeat right center;
+    background: url(../img/index/良仓_03.png) no-repeat right  center;
 }
-

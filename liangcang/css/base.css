@@ -51,7 +51,7 @@ body{height: 2000px;}
 }
 .cart div{
 	position: absolute;
-	z-index: 99;
+	z-index: 150;
 	width: 320px;
 	top: 55px;
 	left: -125px;
@@ -92,7 +92,7 @@ body{height: 2000px;}
 }
 .message-detail{
 	position: absolute;
-	z-index: 99;
+	z-index: 150;
 	top: 55px;
 	left: -50px;
 	display: none;
@@ -134,7 +134,7 @@ body{height: 2000px;}
 	height: 45px;
 	background: white;
 	position: relative;
-	z-index: 999;
+	z-index: 99;
 }
 .nav-content{
 	width: 1000px;
