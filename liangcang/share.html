@@ -3,7 +3,1036 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" href="css/share.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
 	</head>
 	<body>
+		<!-------------------------头部-------------------------------->
+		<div class="head">
+			<div class="head-content">
+				<a class="logo" href="index.html"></a>
+				<ul class="head-right">
+					<li><span><a href="#">登录</a><a href="#">注册</a></span></li>
+					<li class="line"></li>
+					<li class="cart">
+						<a class="cart-a" href="#">购物车</a>
+						<div class="cart-detail">
+							<p>您的购物车暂时没有商品</p>
+							<a href="goods.html">快去抢购良仓商品吧！</a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li class="message">
+						<a  class="message-a" href="#">消息</a>
+						<div class="message-detail">
+							<a href="#">动态<small>0</small></a>
+							<a href="#">评论<small>0</small></a>
+							<a href="#">私信<small>0</small></a>
+							<a href="#">粉丝<small>0</small></a>
+							<a href="#">喜欢<small>0</small></a>
+							<a href="#">通知<small>0</small></a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li ><a class="goodsAdd" href="#">添加良品</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-------------------------导航栏-------------------------------->
+		<div class="nav">
+			<div class="nav-content">
+				<ul class="nav-left">
+					<li><a href="#">首页</a></li>
+					<li class="store">
+						<a href="#">商店</a>
+						<div class="store-content">
+							<ul>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+								<li><a href="#"><img src="img/head/goods1.png" /><span>家电</span></a></li>
+							</ul>
+							<div>
+								<img src="img/head/goods0.jpg" />
+								<p>新视线：  2015期刊</p>
+							</div>
+						</div>
+					</li>
+					<li class="magazine">
+						<a href="#">杂志</a>
+						<div class="magazine-content">
+							<ul>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="share">
+						<a href="#">分享</a>
+						<div class="share-content">
+							<ul>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">达人</a></li>
+				</ul>
+				<div class="nav-right">
+					<div class="search-input">
+						<input type="text" placeholder="search..." />
+					</div>
+					<i></i>
+				</div>
+			</div>
+		</div>
+		
+		<!-------------------------分享内容开始-------------------------------->
+		<div class="box-margin position">
+			<a href="#">良仓 </a><span> > </span>
+			<a href="#"> 全部精品 </a><span> > 分享 </span>
+		</div>
+		<div class="goodsList box-margin">
+			<div class="allGoodsList">
+				<div class="itemList">
+					<div class='headImg'>
+						<a href="#" class="headImgLogo">
+							<img src="img/DC.jpg" alt="滇仓网DC" title="滇仓网DC" />
+						</a>
+						<div class="goodsDetail">
+							<a class="userName" href="#" target="_blank">滇仓网DC</a>
+							<a class="favcount" href="#" target="_blank">34</a>
+						</div>
+					</div>
+					<div class="bindEvent">
+						<div class="goodsmg">
+							<a href="#"><img src="img/diancang.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+					</div>
+				</div>
+				<div class="itemList item-center" >
+					<div class='headImg'>
+						<a href="#" class="headImgLogo" target="_blank">
+							<img src="img/binanaLogo.jpg" alt="BINANA" title="BINANA" />
+						</a>
+						<div class="goodsDetail">
+							<a class="userName" href="#" target="_blank">BINANA</a>
+							<a class="favcount" href="#" target="_blank">950</a>
+						</div>
+					</div>
+					<div class="bindEvent">
+						<div class="goodsmg">
+							<a href="#"><img src="img/binana.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon">
+							<div class="goodsFunc">
+								<span>¥495.20</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">Glasscape鱼缸</a>
+						</div>
+					</div>
+				</div>
+				<div class="itemList">
+					<div class='headImg'>
+						<a href="#" class="headImgLogo">
+							<img src="img/modernskyLogo.jpg" alt="摩登天空Modernsky" title="摩登天空Modernsky" />
+						</a>
+						<div class="goodsDetail">
+							<a class="userName" href="#" target="_blank">摩登天空Modernsky</a>
+							<a class="favcount" href="#" target="_blank">585</a>
+						</div>
+					</div>
+					<div class="bindEvent">
+						<div class="goodsmg">
+							<a href="#"><img src="img/modernsky-yusan.jpg"  /></a>
+						</div>
+						<div class="goodsFuncCon">
+							<div class="goodsFunc">
+								<span>¥149.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow" title="2015年草莓音乐节官方LOGO款-黑胶遮阳伞（多色）">2015年草莓音乐节官方LOGO款-黑胶遮阳伞（多色）</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="siftCon" class="siftCon box-margin">
+			<span class="nav_price">价格&nbsp;
+				<div class="priceContainer">
+					<div class="pc_top"></div>
+					<div class="pc_body"> 
+						<div class="content">
+							<a href="#">0-200元</a>
+							<a href="#">201-500元</a>
+							<a href="#">501-1000元</a>
+							<a href="#">1001-3000元</a>
+							<a href="#">3000元以上</a>
+						</div>
+					</div>
+					<div class="pc_bottom"></div>
+				</div>
+			</span> &nbsp;|&nbsp; 
+			<a href="#"> 喜欢 </a>  &nbsp;|&nbsp;
+			<a href="#"> &nbsp;时间 </a> 
+		</div>
+		
+		
+		<div class="box-margin goodsLis244">
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+			<div class="goodsItem244 goodsListR">
+				<div class="goodInfo">
+					<a href="#"  class="headImgLogo" target="_blank">
+						<img src="img/goodsItemSceend/Jason_FreenyLogo.jpg" />
+					</a>
+					<div class="goodsDetail224">
+						<a class="userName" href="#" target="_blank">Jason Freeny</a>
+						<a class="favcount" href="#" target="_blank">87</a>
+					</div>
+				</div>
+				<div class="bindEvent244">
+						<div class="goodsmg">
+							<a href="#"><img src="img/goodsItemSceend/these.jpg" /></a>
+						</div>
+						<div class="goodsFuncCon244">
+							<div class="goodsFunc">
+								<span>¥29.00</span>
+								<a href="#" title="转发"></a>
+							</div>
+							<a class="theShadow">卧龙米</a>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-------------------------OurShop-------------------------------->
+		<div class="ourShop">
+			<a href="#"><i></i></a>
+			<div class="ourShop-service">
+				<ul>
+					<li>
+						<em class="ourShop-service-em1"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em2"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em3"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em4"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-------------------------底部-------------------------------->
+		<div class="foot">
+			<div class="foot-content">
+				<div class="foot-left">
+					<a class="foot-download" href="#">
+						<p>iPhone</p>
+						<p>Android</p>
+					</a>
+					<ul class="foot-ul">
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+					</ul>
+					<p>© 2013-2015 北京良仓文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
+					<p>  公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
+					<p>  公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+					<p>  社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557 </p>
+					<p>  图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+				</div>
+				<ul class="foot-right">
+					<li><a class="foot-right1" href="#"></a></li>
+					<li><a class="foot-right2" href="#"></a></li>
+					<li><a class="foot-right3" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-------------------------返回顶部按钮-------------------------------->
+		<div class="backToTop"></div>
 	</body>
 </html>
