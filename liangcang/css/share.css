@@ -223,11 +223,11 @@ a{text-decoration: none;}
 /*//第二项商品列表样式*/
 .goodsLis244{
 	margin: 10px auto;
-	height: 2250px;
+	overflow: auto;
 }
 .goodsLis244>div{
 	float: left;
-	margin-right:20px ;
+	margin-right:15px ;
 }
 div.goodsListR{
 	margin-right:0px ;

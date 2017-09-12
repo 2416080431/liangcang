@@ -1,0 +1,22 @@
+.goods_detail{
+	width: 1000px;
+	margin: 0 auto;
+}
+.detail-left{
+	width: 700px;
+	float: left;
+}
+.detail-img{
+	height: 350px;
+	width: 350px;
+	float: left;
+	background: url(../img/goods_detail/detail1.jpg) no-repeat center;
+	background-size: contain;
+}
+.detail-content{
+	width: 350px;
+	float: left;
+}
+.detail-name{
+	margin: 20px 0;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品搜索</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/search.css" />
+		<link rel="stylesheet" href="css/share.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/search.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+		
+	</head>
+	<body>
+		<!-------------------------头部-------------------------------->
+		<div class="head">
+			<div class="head-content">
+				<a class="logo" href="index.html"></a>
+				<ul class="head-right">
+					<li>
+						<span class="nologin"><a href="login.html">登录</a><a href="#">注册</a></span>
+						<div class="logined">
+							<p style="color:#ccc"></p>
+							<span>
+								<a href="#">收货信息</a>
+								<a href="#">我的订单</a>
+								<a class="logout" href="#">注销账户</a>
+							</span>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li class="cart">
+						<a class="cart-a" href="#">购物车</a>
+						<div class="cart-detail">
+							<p>您的购物车暂时没有商品</p>
+							<a href="goods.html">快去抢购良仓商品吧！</a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li class="message">
+						<a  class="message-a" href="#">消息</a>
+						<div class="message-detail">
+							<a href="#">动态<small>0</small></a>
+							<a href="#">评论<small>0</small></a>
+							<a href="#">私信<small>0</small></a>
+							<a href="#">粉丝<small>0</small></a>
+							<a href="#">喜欢<small>0</small></a>
+							<a href="#">通知<small>0</small></a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li ><a class="goodsAdd" href="#">添加良品</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-------------------------导航栏-------------------------------->
+		<div class="nav">
+			<div class="nav-content">
+				<ul class="nav-left">
+					<li><a href="index.html">首页</a></li>
+					<li class="store">
+						<a href="#">商店</a>
+						<div class="store-content">
+							<ul>
+								
+							</ul>
+							<div>
+								<img src="img/head/goods0.jpg" />
+								<p>新视线：  2015期刊</p>
+							</div>
+						</div>
+					</li>
+					<li class="magazine">
+						<a href="#">杂志</a>
+						<div class="magazine-content">
+							<ul>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="share">
+						<a href="share.html">分享</a>
+						<div class="share-content">
+							<ul>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">达人</a></li>
+				</ul>
+				<div class="nav-right">
+					<div class="search-input">
+						<input type="text" id="search-input" placeholder="search..." />
+					</div>
+					<i></i>
+				</div>
+			</div>
+		</div>
+		
+		<!-------------------------商品搜索内容开始-------------------------------->
+		<div class="box-margin position">
+			<a href="#">良仓 </a>
+			<a href="#"> 搜索结果 </a><span> > 衣服 </span>
+		</div>
+		
+		<div class="Search_siftCon box-margin">
+			<div class="secendClass">
+				<div class="clslist">
+					<a class="clsName current">良品</a>
+					<div class="clsAmount">413&nbsp;</div>
+				</div>
+				<div class="clslist">
+					<a class="clsName">结果</a>
+					<div class="clsAmount">98&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-margin goodsLis244 over_hidden" id="search_list" style="margin-bottom: 35px;;">
+			
+			</div>
+		</div>
+		
+		
+		<!-------------------------OurShop-------------------------------->
+		<div class="ourShop">
+			<a href="#"><i></i></a>
+			<div class="ourShop-service">
+				<ul>
+					<li>
+						<em class="ourShop-service-em1"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em2"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em3"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+					<li>
+						<em class="ourShop-service-em4"></em>
+						<span>
+							<p class="ourShop-service-p1">全球精品</p>
+							<p class="ourShop-service-p2">Global Selections</p>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-------------------------底部-------------------------------->
+		<div class="foot">
+			<div class="foot-content">
+				<div class="foot-left">
+					<a class="foot-download" href="#">
+						<p>iPhone</p>
+						<p>Android</p>
+					</a>
+					<ul class="foot-ul">
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+						<li><a href="#">关于良仓</a></li>
+					</ul>
+					<p>© 2013-2015 北京良仓文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
+					<p>  公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
+					<p>  公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+					<p>  社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557 </p>
+					<p>  图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+				</div>
+				<ul class="foot-right">
+					<li><a class="foot-right1" href="#"></a></li>
+					<li><a class="foot-right2" href="#"></a></li>
+					<li><a class="foot-right3" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-------------------------返回顶部按钮-------------------------------->
+		<div class="backToTop"></div>
+		
+	</body>
+</html>
