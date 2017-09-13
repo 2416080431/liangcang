@@ -25,7 +25,7 @@ $(function(){
 						"<div class='goodsFuncCon244'>"+
 							"<div class='goodsFunc'>"+
 								"<span>"+obj[i].price+"</span>"+
-								"<a href='#' title='转发'></a>"+
+								"<a href='goods_detail.html?goods_id="+obj[i].goods_id+"' title='转发'></a>"+
 							"</div>"+
 							"<a class='theShadow'>"+obj[i].goods_name+"</a>"+
 						"</div>"+

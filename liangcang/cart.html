@@ -2,14 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>商品搜索</title>
+		<title>购物车</title>
 		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/search.css" />
-		<link rel="stylesheet" href="css/share.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
-		<script type="text/javascript" src="js/search.js" ></script>
 		<script type="text/javascript" src="js/base.js" ></script>
-		
+		<link rel="stylesheet" href="css/cart.css" />
+		<script type="text/javascript" src="js/myajax.js" ></script>
 	</head>
 	<body>
 		<!-------------------------头部-------------------------------->
@@ -113,107 +111,53 @@
 				</ul>
 				<div class="nav-right">
 					<div class="search-input">
-						<input type="text" id="search-input" placeholder="search..." />
+						<input id="search-input" type="text" placeholder="search..." />
 					</div>
 					<i></i>
 				</div>
 			</div>
 		</div>
 		
-		<!-------------------------商品搜索内容开始-------------------------------->
-		<div class="box-margin position">
-			<a href="#">良仓 </a>
-			<a href="#"> 搜索结果 </a><span> > 衣服 </span>
-		</div>
 		
-		<div class="Search_siftCon box-margin">
-			<div class="secendClass">
-				<div class="clslist">
-					<a class="clsName current">良品</a>
-					<div class="clsAmount">413&nbsp;</div>
-				</div>
-				<div class="clslist">
-					<a class="clsName">结果</a>
-					<div class="clsAmount">98&nbsp;</div>
-				</div>
-			</div>
-		</div>
-		<div class="box-margin goodsLis244 over_hidden" id="search_list" style="margin-bottom: 35px;;">
-			
-			</div>
-		</div>
-		
-		
-		<!-------------------------OurShop-------------------------------->
-		<div class="ourShop">
-			<a href="#"><i></i></a>
-			<div class="ourShop-service">
-				<ul>
-					<li>
-						<em class="ourShop-service-em1"></em>
-						<span>
-							<p class="ourShop-service-p1">全球精品</p>
-							<p class="ourShop-service-p2">Global Selections</p>
-						</span>
-					</li>
-					<li>
-						<em class="ourShop-service-em2"></em>
-						<span>
-							<p class="ourShop-service-p1">全球精品</p>
-							<p class="ourShop-service-p2">Global Selections</p>
-						</span>
-					</li>
-					<li>
-						<em class="ourShop-service-em3"></em>
-						<span>
-							<p class="ourShop-service-p1">全球精品</p>
-							<p class="ourShop-service-p2">Global Selections</p>
-						</span>
-					</li>
-					<li>
-						<em class="ourShop-service-em4"></em>
-						<span>
-							<p class="ourShop-service-p1">全球精品</p>
-							<p class="ourShop-service-p2">Global Selections</p>
-						</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-------------------------底部-------------------------------->
-		<div class="foot">
-			<div class="foot-content">
-				<div class="foot-left">
-					<a class="foot-download" href="#">
-						<p>iPhone</p>
-						<p>Android</p>
-					</a>
-					<ul class="foot-ul">
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-						<li><a href="#">关于良仓</a></li>
-					</ul>
-					<p>© 2013-2015 北京良仓文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
-					<p>  公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
-					<p>  公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
-					<p>  社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557 </p>
-					<p>  图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
-				</div>
-				<ul class="foot-right">
-					<li><a class="foot-right1" href="#"></a></li>
-					<li><a class="foot-right2" href="#"></a></li>
-					<li><a class="foot-right3" href="#"></a></li>
-				</ul>
-			</div>
-		</div>
-		
-		<!-------------------------返回顶部按钮-------------------------------->
-		<div class="backToTop"></div>
-		
+		<!-------------------------购物车内容开始-------------------------------->
+		<div id="cart">
+        <div id="shoppingStepV2">
+            |<div class="item"><span class="txt chk">购物车</span></div>| 
+            <div class="item"><span class="txt">付款</span></div>|
+        </div>
+        
+        <div id="shoppingcarList" style="margin-top:20px;">
+            <table class="carTab">
+                <tbody>
+                	<tr>
+	                    <th class="txtl" width="110">
+	                    </th>
+	                    <th width="300">良品</th>
+	                    <th width="120">数量</th>
+	                    <th width="160">单价（元）</th>
+	                    <th width="160">小计（元）</th>
+	                    <th>操作</th>
+                	</tr>
+                	
+            	</tbody>
+            </table>
+        </div>
+        
+        <div id="shoppingcarOptV2">
+          <form action="/i/shoppingcar/submit/" method="post" name="cartForm" id="cartForm">
+        	<input type="hidden" name="payCartIds" id="payCartIds" value="">
+        	<input type="hidden" name="payMoney" id="payMoney" value="0.00">
+        	<input type="hidden" name="payAmount" id="payAmount" value="0">
+        	<p>良品总价 <font style="font-size:18px;">/</font> <span class="priceNo">¥<font id="sum">0.00</font></span></p>
+        	<p class="origPrice" id="origPrice" style="display: none;"> &nbsp;¥<span>0.00</span>&nbsp;</p>
+        	<p style="display:none;color:#d20019;text-decoration:;" id="origsave"> &nbsp;为您节省 <span>1060</span>元&nbsp;</p>
+            <p><input type="button" class="checkoutBtn" value="立即结算"></p>
+            <p>
+            	</p><fieldset><legend><a href="/i/shop/">继续购物</a></legend></fieldset>
+            <p></p>
+           </form>
+        </div>
+ </div>
+		<script type="text/javascript" src="js/cart.js" ></script>
 	</body>
 </html>

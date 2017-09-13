@@ -44,7 +44,7 @@ $(function(){
 		},10);
 	});
 	
-	/////////////////////////////////ajax请求热门商品
+	/////////////////////////////////ajax请求商品类型
   $.ajax({
   	type:"get",
   	url:"http://h6.duchengjiu.top/shop/api_cat.php",
@@ -63,7 +63,18 @@ $(function(){
   	}
   })
   
-  
+  //////////////////////////////////////更改头部的登录状态
+ 	if(sessionStorage.token != undefined && sessionStorage.token != "null"){
+ 		$(".nologin").css("display","none");
+ 		$(".logined").css("display","block");
+ 		$(".logined p").text(sessionStorage.username);
+ 	}
+ 	
+ 	////////////////////////////////////注销账户
+ 	$(".logout").click(function(){
+ 		sessionStorage.token = null;
+ 		window.location = "login.html"
+ 	});
   
   
 })

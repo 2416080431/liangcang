@@ -97,7 +97,7 @@ carousel();
  		success:function(data){
  			for(var i=0; i<data.data.length; i++){
  				$(".imgCon img").eq(i).attr("src",data.data[i].goods_thumb);
- 				$(".imgCon a").eq(i).attr("href","goods_detail.html?goods_id="+data.data[i].goods_id);
+ 				$(".imgCon").eq(i).children("a").attr("href","goods_detail.html?goods_id="+data.data[i].goods_id);
  				$(".money").eq(i).text(data.data[i].price);
  				$(".tle").eq(i).text(data.data[i].goods_name);
  				$(".desc").eq(i).text(data.data[i].goods_desc);
@@ -105,16 +105,5 @@ carousel();
  		}
  	});
  	
- 	//////////////////////////////////////更改头部的登录状态
- 	if(sessionStorage.token != undefined && sessionStorage.token != "null"){
- 		$(".nologin").css("display","none");
- 		$(".logined").css("display","block");
- 		$(".logined p").text(sessionStorage.username);
- 	}
  	
- 	////////////////////////////////////注销账户
- 	$(".logout").click(function(){
- 		sessionStorage.token = null;
- 		window.location = "login.html"
- 	});
 }

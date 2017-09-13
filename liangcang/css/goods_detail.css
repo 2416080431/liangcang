@@ -10,8 +10,10 @@
 	height: 350px;
 	width: 350px;
 	float: left;
-	background: url(../img/goods_detail/detail1.jpg) no-repeat center;
+	background: url(../img/goods_detail/detail1.jpg);
 	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .detail-content{
 	width: 350px;
@@ -19,4 +21,61 @@
 }
 .detail-name{
 	margin: 20px 0;
+}
+.detail-content span{
+	font-size: 12px;
+	color: rgb(153,153,153);
+}
+.detail-desc b{
+	color: rgb(16,131,255);
+	font-size: 18px;
+}
+.shipNote{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.note1,.note2{
+	padding-left: 17px;
+	
+}
+.note1{
+	background: url(../img/goods_detail/note1.png) no-repeat left center;
+	background-size: 14px 14px;
+}
+.note2{
+	background: url(../img/goods_detail/note2.png) no-repeat left center;
+	background-size: 14px 14px;
+}
+.number{
+	margin-top: 30px;
+}
+.number input{
+	height: 24px;
+	width: 52px;
+	border: 1px solid black;
+	margin: 0 7px;
+	text-align: center;
+}
+.number button{
+	height: 14px;
+	width: 14px;
+	text-align: center;
+	line-height: 6px;
+	outline: 0;
+	background: white;
+}
+.number span{
+	margin-right: 10px;
+}
+.addToCart{
+	margin-top: 20px;
+}
+.addToCart input{
+	background: black;
+	width: 330px;
+	height: 42px;
+	line-height: 42px;
+	border: 0;
+	color: white;
+	font-size: 18px;
 }
