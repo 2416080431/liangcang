@@ -1,0 +1,39 @@
+.receiver{
+	width: 1000px;
+	margin: 80px auto;
+}
+.receiver h3{
+	text-align: left;
+	margin: 20px 0;
+}
+.receiver input{
+	padding: 5px;
+	margin: 5px 20px;
+	height: 18px;
+	width: 254px;
+}
+.receiver table td{
+	font-size: 13px;
+}
+.receiver table{
+	margin: 30px 0;
+}
+#add-address{
+	   cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 98px;
+    background: #6393B4;
+    color: #fff;
+}
+#myaddress{
+	text-align: center;
+}
+#myaddress td{
+	border: 1px solid #bbb;
+	padding: 8px;
+}
+.address-delete{
+	color: #0C6EBA;
+	cursor: pointer;
+}

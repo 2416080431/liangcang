@@ -2,14 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>商品搜索</title>
+		<title>收货信息</title>
 		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/search.css" />
-		<link rel="stylesheet" href="css/share.css" />
 		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
-		<script type="text/javascript" src="js/search.js" ></script>
 		<script type="text/javascript" src="js/base.js" ></script>
-		
+		<script type="text/javascript" src="js/receive.js" ></script>
+		<link rel="stylesheet" href="css/receiver.css" />
 	</head>
 	<body>
 		<!-------------------------头部-------------------------------->
@@ -120,29 +118,83 @@
 			</div>
 		</div>
 		
-		<!-------------------------商品搜索内容开始-------------------------------->
-		<div class="box-margin position">
-			<a href="#">良仓 </a>
-			<a href="#"> 搜索结果 </a><span> > 衣服 </span>
-		</div>
 		
-		<div class="Search_siftCon box-margin">
-			<div class="secendClass">
-				<div class="clslist">
-					<a class="clsName current">良品</a>
-					<div class="clsAmount">413&nbsp;</div>
-				</div>
-				<div class="clslist">
-					<a class="clsName">结果</a>
-					<div class="clsAmount">98&nbsp;</div>
-				</div>
-			</div>
-		</div>
-		<div class="box-margin goodsLis244 over_hidden" id="search_list" style="margin-bottom: 35px;;">
+		<!-------------------------收货信息内容开始-------------------------------->
+		<div class="receiver">
+			<h3>新增收货地址</h3>
+			<table border="0" cellspacing="0" cellpadding="">
+				<tr>
+					<td>地址类型:</td>
+					<td><input id="address_name" type="text" placeholder="公司、家庭。。。" /></td>
+				</tr>
+				<tr>
+					<td>收货人:</td>
+					<td><input id="consignee" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>国家:</td>
+					<td><input id="country" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>省级:</td>
+					<td><input id="province" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>市/县:</td>
+					<td><input id="city" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>区/街道:</td>
+					<td><input id="district" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>详细地址:</td>
+					<td><input id="address" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>邮编:</td>
+					<td><input id="zip_code" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>手机号码:</td>
+					<td><input id="mobile" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>邮箱:</td>
+					<td><input id="email" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>固定电话:</td>
+					<td><input id="tel" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td>配送时间:</td>
+					<td><input id="besttime" type="text" placeholder="周一到周五、周末等" /></td>
+				</tr>
+				<tr>
+					<td>标志建筑:</td>
+					<td><input id="sign_building" type="text" placeholder="" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input id="add-address" type="button" value="保存" /></td>
+				</tr>
+			</table>
+			<hr />
 			
-			</div>
+			<h3>我的收获信息</h3>
+			<table id="myaddress" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="80px">收货人</td>
+					<td width="60px">省</td>
+					<td width="60px">市/县</td>
+					<td width="100px">区/街道</td>
+					<td width="280px">详细地址</td>
+					<td width="160px">电话</td>
+					<td width="80px">操作</td>
+				</tr>
+			</table>
 		</div>
-		
 		
 		<!-------------------------OurShop-------------------------------->
 		<div class="ourShop">

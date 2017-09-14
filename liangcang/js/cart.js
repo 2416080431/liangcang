@@ -1,6 +1,9 @@
 window.onload = function(){
     var oTable = document.querySelector('.carTab');
     var oSum = document.querySelector('#sum');
+    
+    
+    ////////////////////////////获取购物车数据并添加元素
     myajax.get('http://h6.duchengjiu.top/shop/api_cart.php', {token: sessionStorage.token}, function(err, responseText){
       var json = JSON.parse(responseText);
       var data = json.data;
@@ -29,19 +32,21 @@ window.onload = function(){
 					             	</span>
 					                <input type="text" id="goodsAmount" readonly="readonly" data-id="${obj.goods_id}" name="number" value="${obj.goods_number}" class="num2">
 					                <span class="opt optsub" >
-					                	<img name=sub src="http://www.iliangcang.com/images/default/minus.png">
+					                	<img name="sub" src="http://www.iliangcang.com/images/default/minus.png">
 					                </span>
 					            </td>
 					            
 					            <td>${obj.goods_price}</td>
 					            <td name="sum">${obj.goods_price*obj.goods_number}</td>
-					            <td>
-					            <a href="javascript:;" onclick="ILC_CAR.del(809431,ILC_CAR.list2);" class="blue">删除</a>
+					            <td >
+					            <a class="blue" >删除</a>
 					            </td>
 					        </tr>
                       `;
       }
       getSum();
+      
+      //////////////////////////////////触发更改数量点击事件,并提交数据
       $(".optadd").click(function(){
       	var number = $(this).next().val();
       	number++;
@@ -54,14 +59,31 @@ window.onload = function(){
       	if(number <= 1) number=1;
       	$(this).prev().val(number);
       });
+      
+      ///////////////////////////////////点击删除触发事件
+      $(".blue").click(function(){
+      	var self = this;
+      	var goods_id = $(this).parent().prev().prev().prev().children("input").data("id")
+      	
+      	$.ajax({
+      		type:"post",
+      		url:"http://h6.duchengjiu.top/shop/api_cart.php?token="+sessionStorage.token,
+      		data:{"goods_id":goods_id,"number":0},
+      		contentType:"application/x-www-form-urlencoded",
+      		success:function(){
+      			$(self).parents("tr").remove();
+      			getSum();
+      		}
+      	});
     });
     
+    });
     
     oTable.onclick = function(event) {
       event = event || window.event;
       var target = event.target || event.srcElement;
       if (target.name == 'add') {
-        console.log(target.value, target.dataset.id);
+//      console.log(target.value, target.dataset.id);
         var goods_id = target.parentNode.nextElementSibling.dataset.id;
         var number = target.parentNode.nextElementSibling.value;
         
@@ -69,7 +91,7 @@ window.onload = function(){
       	var goods_id = target.parentNode.previousElementSibling.dataset.id;
       	var number = target.parentNode.previousElementSibling.value;
       }
-      console.log(number,goods_id);
+//    console.log(number,goods_id);
         myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+sessionStorage.token,
         {goods_id, number},
         function(err, responseText) {
@@ -89,9 +111,9 @@ window.onload = function(){
           }
         });
       
-    }
+    };
     
-
+		//////////////////////计算购物车总价
     function getSum() {
       var oSums = document.querySelectorAll('td[name=sum]');
       var sum = 0;
@@ -99,5 +121,8 @@ window.onload = function(){
         sum += parseInt(oSums[i].innerText);
       }
       oSum.innerText = sum;
-    }
+    };
+    
+    
+    
 }

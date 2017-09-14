@@ -45,6 +45,33 @@
 	background: #525961;
 	margin-top: 25px;
 }
+.logined{
+	height: 56px;
+	width: 80px;
+	position: relative;
+	left: -20px;
+	display: block;
+}
+.logined span{
+	position: absolute;
+	height: 150px;
+	width: 80px;
+	top: 55px;
+	background: #25292e;
+	z-index: 150;
+	text-align: center;
+	display: none;
+}
+.logined span a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	width: 80px;
+}
+.logined:hover span{
+	display: block;
+}
+
 .cart{
 	position: relative;
 }

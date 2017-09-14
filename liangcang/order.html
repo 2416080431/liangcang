@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+		<script type="text/javascript" src="js/order.js" ></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/order.css" />
+	</head>
+	<body>
+		<!-------------------------头部-------------------------------->
+		<div class="head">
+			<div class="head-content">
+				<a class="logo" href="index.html"></a>
+				<ul class="head-right">
+					<li>
+						<span class="nologin"><a href="login.html">登录</a><a href="register.html">注册</a></span>
+						<div class="logined">
+							<p style="color:#ccc"></p>
+							<span>
+								<a href="receiver.html">收货信息</a>
+								<a href="order.html">我的订单</a>
+								<a class="logout" href="#">注销账户</a>
+							</span>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li class="cart">
+						<a class="cart-a" href="cart.html">购物车</a>
+						<div class="cart-detail">
+							<p>您的购物车暂时没有商品</p>
+							<a href="goods.html">快去抢购良仓商品吧！</a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li class="message">
+						<a  class="message-a" href="#">消息</a>
+						<div class="message-detail">
+							<a href="#">动态<small>0</small></a>
+							<a href="#">评论<small>0</small></a>
+							<a href="#">私信<small>0</small></a>
+							<a href="#">粉丝<small>0</small></a>
+							<a href="#">喜欢<small>0</small></a>
+							<a href="#">通知<small>0</small></a>
+						</div>
+					</li>
+					<li class="line"></li>
+					<li ><a class="goodsAdd" href="#">添加良品</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-------------------------导航栏-------------------------------->
+		<div class="nav">
+			<div class="nav-content">
+				<ul class="nav-left">
+					<li><a href="index.html">首页</a></li>
+					<li class="store">
+						<a href="#">商店</a>
+						<div class="store-content">
+							<ul>
+								
+							</ul>
+							<div>
+								<img src="img/head/goods0.jpg" />
+								<p>新视线：  2015期刊</p>
+							</div>
+						</div>
+					</li>
+					<li class="magazine">
+						<a href="#">杂志</a>
+						<div class="magazine-content">
+							<ul>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+								<li><a href="#">趣物</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="share">
+						<a href="share.html">分享</a>
+						<div class="share-content">
+							<ul>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">男士</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">达人</a></li>
+				</ul>
+				<div class="nav-right">
+					<div class="search-input">
+						<input id="search-input" type="text" placeholder="search..." />
+					</div>
+					<i></i>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-------------------------订单内容开始-------------------------------->
+		<div id="order">
+			
+			<div class="nav">
+			<a href="#" class="navitem current">基本设置</a> 	 
+			</div>
+		
+			<div class="secNav">
+			    <a href="http://www.iliangcang.com/i/userinfo/" class="navitem first ">个人设置</a> |
+					<a href="http://www.iliangcang.com/i/userpwd/" class="navitem ">帐号安全</a> |
+					<a href="http://www.iliangcang.com/i/useraddress/" class="navitem ">收货信息</a>  | 
+				<a href="#" class="navitem current">我的订单</a> | 
+			    <a href="http://www.iliangcang.com/i/invite/" class="navitem ">邀请好友</a>	 
+			</div>
+ 
+
+
+
+
+			<div class="secNav">
+            	<a href="#" class="navitem  ">已完成订单</a> | 
+				<a href="#" class="navitem  currentV2">未完成订单</a> |
+            </div>
+			
+			<div id="orderTabConBack2">
+				<div class="conTle"> 
+                	<input type="button" class="delbtn sxBtn" value="私信客服">
+                	<input type="text" class="searchInpt" name="keyword" id="orderKeyword" placeholder="请输入订单编号">
+                    <input type="button" class="searchBtn" value="搜索" >
+                </div>
+                
+				<table>
+                	<tbody>
+                		<tr>
+                        <th width="220">良品</th>
+                        <th width="80" class="item">单价（元）</th>
+                        <th width="65" class="item">数量</th>
+                        <th width="120" class="item">订单编号</th>
+                        <th width="180" class="item"> 订单金额（元）</th>
+                        <th width="70" class="item">交易状态</th>
+                        <th></th>
+                    	</tr>
+                    </tbody>
+                    
+                    
+                    
+                    <tbody id="order-detail" class="listP">
+                    	<tr>
+                    		<td>
+                    			<div class="orderItem">
+                    				<a href="#" target="_blank" class="imgCon">
+                    					<img src="http://imgs-qn.iliangcang.com/ware/goods/tmb/2/259/259177.jpg">
+                    				</a>
+                    				<div class="info">
+                    					<p>
+                    						<a href="#" target="_blank">品牌 ／ ROYAL APOTHIC</a>
+                    					</p>
+                    					<p>
+                    						<a href="#" target="_blank" class="blue">男士全天候抗老化润肤霜 | 集合了所有能保护、修复、营养你皮肤的纯天然植物精油【120g】</a>
+                    					</p>
+                    					<p>一只</p>
+                    				</div>
+                    			</div>
+                    		</td>
+                    		<td class="item">578.00</td>
+                    		<td class="item">1</td>
+                    		<td class="item" rowspan="1">201709141433084744</td>
+                    		<td class="item" rowspan="1">520.00 (<span style="text-decoration: line-through;">&nbsp;578.00&nbsp;</span>)</td>
+                    		<td class="item" rowspan="1">
+                    			<p>未支付</p>
+                    		</td>
+                    		<td class="item" rowspan="1" width="80">
+                    			<p>
+                    				<a href="#" target="_blank" class="thebtn">查看并支付</a>
+                    			</p>
+                    		</td>
+                    	</tr>
+                    	
+                    </tbody>
+                    
+                    
+                    
+                    
+                    <tbody class="listP">
+                    	<tr>
+                    		<td colspan="7">您还有购买任何商品哦，～_～！</td>
+                    	</tr>
+                    </tbody>
+                    
+                    <tbody>
+                    	<tr>
+                    	<td colspan="9" class="page botm">
+                        	<div class="lftcon"></div>
+                        	
+                    	</tr>
+                 	</tbody>
+				</table>
+                 <p class="clr"></p>
+		    </div>
+		
+		</div>
+	</body>
+</html>

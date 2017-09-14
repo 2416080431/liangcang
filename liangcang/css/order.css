@@ -1,0 +1,184 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+/*基本设置*/
+#order{
+	width: 1000px;
+	color: #666666;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+#order .nav{
+	width: 1000px;
+	padding: 20px 0px;
+	height: 27px;
+	border-bottom: 1px solid #CCCCCC;
+	font-size: 14px;
+	line-height: 27px;
+	vertical-align: middle;
+}
+#order .nav a .navitem{
+	display: inline-block;
+	text-align: center;
+	width: 79px;
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+/*个人设置*/
+#order .secNav{
+	width: 1000px;
+	padding: 20px 0px;
+	height: 20px;
+	font-size: 13px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+#order .secNav a.first {
+    padding-left: 0px;
+}
+#order .secNav a.navitem {
+    color: #666;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/*我的订单*/
+#order .secNav a.current {
+    color: #7ca8cb;
+}
+
+/*未完成订单*/
+#order .secNav a.currentV2 {
+    color: #fff;
+    background: #7ca8cb;
+    border-radius: 3px;
+    padding: 0px 7px;
+}
+
+
+/*订单详情*/
+#orderTabConBack2 {
+    width: 1000px;
+    margin-top: 0px;
+}
+#orderTabConBack2 .conTle {
+    width: 1000px;
+    clear: both;
+    padding: 5px 0px;
+    color: #6696b7;
+    font-size: 15px;
+    text-align: right;
+}
+#orderTabConBack2 .sxBtn {
+    padding: 0px 5px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    background: #dedede;
+    color: #333;
+}
+#orderTabConBack2 .delbtn{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin: 2px auto;
+}
+#orderTabConBack2 .conTle .searchInpt {
+    display: inline-block;
+    height: 20px;
+    width: 180px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+#orderTabConBack2 .conTle .searchBtn {
+    display: inline-block;
+    height: 22px;
+    color: #fff;
+    background: #6696b7;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 0px 8px;
+}
+
+
+/*选好的商品*/
+#orderTabConBack2 table {
+    width: 100%;
+    font-size: 13px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#orderTabConBack2 table tr th {
+    padding: 15px 5px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+#orderTabConBack2 table tr th.item {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#orderTabConBack2 table tr td {
+    padding: 10px 5px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+}
+#orderTabConBack2 table tr td.page {
+    border: none;
+    padding: 5px;
+    height: 16px;
+    background: #fff;
+    vertical-align: middle;
+}
+
+
+/*这是添加的订单商品*/
+#orderTabConBack2 table tr td .orderItem {
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    text-align: left;
+}
+#orderTabConBack2 table tr td .orderItem .imgCon {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f0f0f0;
+}
+
+#orderTabConBack2 table tr td a {
+    color: #666;
+}
+#orderTabConBack2 table tr td .orderItem .imgCon img {
+    width: 50px;
+    height: 50px;
+}
+#orderTabConBack2 table tr td.item {
+    border: 1px solid #ccc;
+}
+#orderTabConBack2 .thebtn {
+    display: inline-block;
+    padding: 0px 3px;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    color: #fff;
+    background: #6696b7;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin: 2px auto;
+}
