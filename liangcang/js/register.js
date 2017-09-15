@@ -21,6 +21,7 @@ $(function(){
 						$(".reg_message").text("两次密码不相同");
 					}else{
 						$(".reg_message").text(data.message);
+						location.href="login.html";
 					}
 				}else{
 					$(".reg_message").text(data.message);

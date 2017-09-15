@@ -61,11 +61,11 @@ a{text-decoration: none;}
 
 
 /*订单详情*/
-#orderTabConBack2 {
+.orderTabConBack2 {
     width: 1000px;
     margin-top: 0px;
 }
-#orderTabConBack2 .conTle {
+.orderTabConBack2 .conTle {
     width: 1000px;
     clear: both;
     padding: 5px 0px;
@@ -73,7 +73,7 @@ a{text-decoration: none;}
     font-size: 15px;
     text-align: right;
 }
-#orderTabConBack2 .sxBtn {
+.orderTabConBack2 .sxBtn {
     padding: 0px 5px;
     height: 22px;
     line-height: 22px;
@@ -81,7 +81,7 @@ a{text-decoration: none;}
     background: #dedede;
     color: #333;
 }
-#orderTabConBack2 .delbtn{
+.orderTabConBack2 .delbtn{
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
@@ -89,14 +89,14 @@ a{text-decoration: none;}
 	cursor: pointer;
 	margin: 2px auto;
 }
-#orderTabConBack2 .conTle .searchInpt {
+.orderTabConBack2 .conTle .searchInpt {
     display: inline-block;
     height: 20px;
     width: 180px;
     border: 1px solid #ccc;
     margin-right: 5px;
 }
-#orderTabConBack2 .conTle .searchBtn {
+.orderTabConBack2 .conTle .searchBtn {
     display: inline-block;
     height: 22px;
     color: #fff;
@@ -110,7 +110,7 @@ a{text-decoration: none;}
 
 
 /*选好的商品*/
-#orderTabConBack2 table {
+.orderTabConBack2 table {
     width: 100%;
     font-size: 13px;
 }
@@ -118,23 +118,23 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-#orderTabConBack2 table tr th {
+.orderTabConBack2 table tr th {
     padding: 15px 5px;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
 }
-#orderTabConBack2 table tr th.item {
+.orderTabConBack2 table tr th.item {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
-#orderTabConBack2 table tr td {
+.orderTabConBack2 table tr td {
     padding: 10px 5px;
     text-align: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     vertical-align: top;
 }
-#orderTabConBack2 table tr td.page {
+.orderTabConBack2 table tr td.page {
     border: none;
     padding: 5px;
     height: 16px;
@@ -144,13 +144,14 @@ table {
 
 
 /*这是添加的订单商品*/
-#orderTabConBack2 table tr td .orderItem {
-    width: 300px;
+.orderTabConBack2 table tr td .orderItem {
+    width: 200px;
     height: 50px;
     overflow: hidden;
     text-align: left;
+    float: left;
 }
-#orderTabConBack2 table tr td .orderItem .imgCon {
+.orderTabConBack2 table tr td .orderItem .imgCon {
     float: left;
     display: block;
     width: 50px;
@@ -158,17 +159,18 @@ table {
     border: 1px solid #f0f0f0;
 }
 
-#orderTabConBack2 table tr td a {
+
+.orderTabConBack2 table tr td a {
     color: #666;
 }
-#orderTabConBack2 table tr td .orderItem .imgCon img {
+.orderTabConBack2 table tr td .orderItem .imgCon img {
     width: 50px;
     height: 50px;
 }
-#orderTabConBack2 table tr td.item {
+.orderTabConBack2 table tr td.item {
     border: 1px solid #ccc;
 }
-#orderTabConBack2 .thebtn {
+.orderTabConBack2 .thebtn {
     display: inline-block;
     padding: 0px 3px;
     height: 18px;
@@ -181,4 +183,7 @@ table {
     border: none;
     cursor: pointer;
     margin: 2px auto;
+}
+#order-goods td{
+	border: 0;
 }

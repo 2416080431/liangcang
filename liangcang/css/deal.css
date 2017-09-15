@@ -1,4 +1,52 @@
 .deal{
 	width: 1000px;
+	margin: 50px auto;
+}
+.deal-img{
+	height: 315px;
+	width: 1000px;
+}
+.deal h3{
+	margin-top: 100px;
+}
+.address-container{
+	padding: 30px 10px;
+	overflow: auto;
+	margin-bottom: 100px;
+}
+.deal-address{
+	width: 190px;
+	height: 150px;
+	border: 2px solid #7fa6c5;
+	float: left;
+	padding: 20px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.deal-name{
+	float: left;
+}
+.deal-tel1{
+	float: right;
+}
+.deal-tel{
+	overflow: auto;
+	border-bottom: 1px solid #EDEDED;
+	margin-bottom: 20px;
+}
+.deal-tel span{
+	line-height: 30px;
+}
+.carTab{
+	margin-bottom: 100px;
+}
+#deal{
+	display: block;
+	width: 168px;
+	height: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+	text-align: center;
+	background: #7FA6C5;
 	margin: 0 auto;
 }
